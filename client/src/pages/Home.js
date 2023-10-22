@@ -12,7 +12,7 @@ const Home = () => {
           </a>
         </div>
         <div className="mr-2">
-          <Link to="/">Home</Link>
+          <Link to="/">Home</Link >
         </div>
         <div className="mr-2">
           <Link to="/about">About</Link>
