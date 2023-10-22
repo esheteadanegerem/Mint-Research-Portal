@@ -1,9 +1,10 @@
 import React from 'react'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Home = () => {
   return (
-    <div>
-      home page goes here
+    <div className=' p-3 vh-100 bg-primary'>
+    welcome to ministry of innovation
     </div>
   )
 }
