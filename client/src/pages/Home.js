@@ -1,9 +1,9 @@
 import React from 'react'
-import 'bootstrap/dist/css/bootstrap.min.css'
+
 
 const Home = () => {
   return (
-    <div >
+    <div className='container p-3 vh-100'>
     welcome to ministry of innovation
     </div>
   )
