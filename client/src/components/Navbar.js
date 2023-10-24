@@ -1,11 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-
+import logo from '../assets/images/logo.png'
 const Navbar = () => {
   return (
     
         <nav className="navbar navbar-expand-lg navbar-light bg-light" style={{border:' '}}>
-      <a className="navbar-brand" href="#"><img src='../images/logo.js' alt='mint logo '></img ></a>
+      <a className="navbar-brand" href="#"><img src={logo} alt='mint logo ' className='img-fluid mx-auto d-block ' id='logo'></img ></a>
       <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
       </button>
@@ -24,7 +24,7 @@ const Navbar = () => {
             <Link to="/services" className="nav-link">Collaborations</Link>
           </li>
           <li className="nav-item">
-            <Link to="/services" className="nav-link">About Us</Link>
+            <Link to="/aboutus" className="nav-link">About Us</Link>
           </li>
 
           <li className="nav-item">

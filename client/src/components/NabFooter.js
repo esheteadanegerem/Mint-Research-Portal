@@ -1,7 +1,8 @@
 import React from 'react';
 import '../assets/css/Navfooter.css';
 import logo from '../assets/images/logo.png';
-
+import { FaPhone, FaEnvelope, FaLinkedin } from 'react-icons/fa';
+import WriteUsMessage from './WriteUsMessage';
 import { CDBFooter, CDBFooterLink, CDBBox, CDBBtn, CDBIcon } from 'cdbreact';
 import {Link} from 'react-router-dom'
 // import Link from 'cdbreact/dist/components/Link';
@@ -13,42 +14,48 @@ const NabFooter = () => {
         <CDBBox display="flex" justifyContent="between" className="flex-wrap">
           <CDBBox>
             <a to="/" className="d-flex align-items-center p-0 text-dark">
-              <img alt="logo" src={logo} width="50px" />
+              <img alt="logo" src={logo} width="100px" className='rounded-circle'/>
               <span className="ms-3 h5 font-weight-bold">MinT</span>
             </a>
             <p className="my-3" style={{ width: '250px' }}>
-              We are creating High-Quality Resources and tools to aid developers during the development of their projects.
+            Bring us your new Ideas and Create new to this world. And we are perfect to help you.
             </p>
           </CDBBox>
           <CDBBox>
             <p className="h5 mb-4" style={{ fontWeight: '600' }}>
-            MinT
+         Quick links
             </p>
             <CDBBox flex="column" display="flex" style={{ cursor: 'pointer', padding: '0' }}>
               <Link to="/">Resources</Link>
               <Link to="/">About Us</Link>
-              <Link to="/">Contact</Link>
-              <Link to="/">Blog</Link>
+              <Link to="/">Annoouncement</Link>
+              <Link to="/">National Call</Link>
+              <Link to="/">Accepted Projects</Link>
+              <Link to="/">News</Link>
             </CDBBox>
           </CDBBox>
           <CDBBox>
             <p className="h5 mb-4" style={{ fontWeight: '600' }}>
-              Help
+              Write Us message
+           <WriteUsMessage/>
             </p>
-            <CDBBox display="flex" flex="column" style={{ cursor: 'pointer', padding: '0' }}>
-              <Link href="/">Support</Link>
-              <Link href="/">Sign Up</Link>
-              <Link href="/">Sign In</Link>
-            </CDBBox>
+           
           </CDBBox>
           <CDBBox>
             <p className="h5 mb-4" style={{ fontWeight: '600' }}>
-              Products
+             Contact us
+             
             </p>
             <CDBBox display="flex" flex="column" style={{ cursor: 'pointer', padding: '0' }}>
-              <Link to="/">Windframe</Link>
-              <Link to="/">Loop</Link>
-              <Link to="/">Contrast</Link>
+              <Link to="/">  <div>
+        <FaPhone /> 058- 456-7890
+      </div></Link>
+              <Link to="/"> <div>
+        <FaEnvelope />  example@example.com
+      </div></Link>
+              <Link to="/"> <div>
+        <FaLinkedin /> linkedin.com/in/yourprofile
+      </div></Link>
             </CDBBox>
           </CDBBox>
         </CDBBox>

@@ -7,7 +7,25 @@
     background-color: #deb887;
    
 }
-#imag{
-    width: 100%;
-  
-background-color: cadetblue;}
+/* #imag{
+   width: 100%;
+} */
+#image-container {
+    position: relative;
+    display: inline-block; /* Make sure the container takes up only as much space as the image */
+}
+
+#image {
+    max-width: 100%;
+    height: auto;
+}
+
+#overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+     width: 50%;
+     margin-right: 20pt;
+     margin-top: 20rem;
+    padding: 10px; /* Adjust padding as needed */
+}
