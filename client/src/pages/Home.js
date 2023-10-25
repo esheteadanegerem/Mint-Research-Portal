@@ -18,7 +18,7 @@ const Home = () => {
           <Nav>
             <div className='row'>
               <div className='col'>
-              <Nav.Link className='btn  ' as={Link} to='/about' id='aboutus'>About Us</Nav.Link>
+              <Nav.Link  className='btn  ' as={Link} to='/about' id='aboutus'>About Us</Nav.Link>
               </div>
               <div className='col'><Nav.Link className='btn bg-gold' as={Link} to='/calls' id='calls'>See  new calls</Nav.Link></div>
             </div>
@@ -27,14 +27,30 @@ const Home = () => {
           </Nav>
         </div>
         <div className='col  ' id='imag'>
-        <img src={invent} alt='innovations' id='imag'></img>
+        <img src={invent} alt='innovations' id='imag' className='img-fluid mx-auto d-block img-thumbnail'></img>
         </div>
       </div>
       <div>
-        <h1>discover potential resouces</h1>
-       
-        <img src={potential2} id='imag'/>
-        <img src={potentail1} id='imag'/>
+     <br/>
+     
+      <div id="image-container">
+      <img  className ='img-fluid mx-auto d-block justify-content-center' src={potential2} id='image' style={{
+          width:1100,
+          height:500
+        }}/>
+      
+        <div id="overlay" className='mt-1 bg-dark'>
+           <div className='bg-dark text-light mt-3 p-5'><h1 className=''>Discover <br/>the potetinal <br/> resouece <br/>  sector <br/>
+              </h1>
+              <p> Connect with other <br/> Institutions ....</p>
+                 
+                  <Link to='/connctInstitute' className='btn bg-info'>Connect institutes</Link>
+              </div>
+        </div>
+    </div>
+  
+
+
       </div>
 <NabFooter/>
     </div>
